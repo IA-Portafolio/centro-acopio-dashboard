@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Centro de Acopio Bajo Cuerda</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+</head>
+<body>
+  <div class="wrap">
+    <header class="top">
+      <div>
+        <h1 id="main-title">Centro de Acopio</h1>
+        <p>Consolidado de ayuda humanitaria — Eje Cafetero y Valle del Cauca</p>
+      </div>
+    </header>
+
+    <section id="logros-section"></section>
+
+    <div class="kpi-grid" id="kpi-grid"></div>
+
+    <section>
+      <h2>Flota movilizada</h2>
+      <p class="subtitle">Vehículos usados para recolección y entrega de ayudas.</p>
+      <div class="panel" id="flota-chart"></div>
+    </section>
+
+    <section>
+      <h2>Composición de la ayuda recibida</h2>
+      <p class="subtitle">Desglose por categoría de las 500 toneladas del logro "Bajo Cuerda".</p>
+      <div class="panel" id="composicion-chart"></div>
+    </section>
+
+    <section>
+      <h2>Donaciones recibidas</h2>
+      <p class="subtitle">Por plataforma. Los montos no se convierten entre monedas.</p>
+      <div class="panel">
+        <div class="donation-grid" id="donation-grid"></div>
+        <div class="subtotal-row" id="donation-subtotals"></div>
+        <p class="note">Nota: los subtotales suman únicamente plataformas de la misma moneda (USD con USD, COP con COP), sin aplicar tasa de cambio.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Mapa de lugares atendidos</h2>
+      <p class="subtitle">Ubicaciones donde se ha entregado o gestionado ayuda. Los puntos con borde punteado son ubicaciones aproximadas (nombre no identificado con certeza como cabecera municipal).</p>
+      <div class="panel">
+        <div id="map"></div>
+        <div class="legend" id="map-legend"></div>
+      </div>
+    </section>
+
+    <section>
+      <div class="two-col">
+        <div>
+          <h2>Cobertura geográfica</h2>
+          <p class="subtitle">Municipios y lugares donde se ha entregado o gestionado ayuda.</p>
+          <div class="coverage-grid" id="coverage-grid"></div>
+        </div>
+        <div>
+          <h2>Lugares por departamento</h2>
+          <p class="subtitle">Comparativo de cobertura.</p>
+          <div class="panel" id="cobertura-chart"></div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-brand">
+        <span>Hecho con ❤️ por</span>
+        <img src="assets/ia-portafolio-logo.png" alt="IA Portafolio" class="footer-logo" />
+      </div>
+    </footer>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
