@@ -103,7 +103,6 @@ function renderLogros() {
     const otros = l.toneladasTotales - alimentos;
     return `
       <div class="achievement-card">
-        <div class="achievement-badge">🏆</div>
         <div class="achievement-body">
           <div class="achievement-kicker">Logro del acopio</div>
           <h2 class="achievement-name">${l.nombre}</h2>

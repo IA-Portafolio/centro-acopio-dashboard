@@ -202,11 +202,6 @@ section > .subtitle {
   box-shadow: var(--shadow);
 }
 
-.achievement-badge {
-  font-size: 3rem;
-  flex-shrink: 0;
-}
-
 .achievement-kicker {
   font-size: 0.72rem;
   font-weight: 700;
