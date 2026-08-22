@@ -83,6 +83,14 @@ header.top p {
   margin-top: 2px;
 }
 
+.kpi .kpi-note {
+  font-size: 0.72rem;
+  font-style: italic;
+  color: var(--ink-soft);
+  margin-top: 8px;
+  opacity: 0.8;
+}
+
 section {
   margin-bottom: 34px;
 }

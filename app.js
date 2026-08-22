@@ -11,14 +11,15 @@ function renderKPIs() {
   const kpis = [
     { value: totalLugares, label: "Municipios / lugares atendidos" },
     { value: totalDeptos, label: "Departamentos con cobertura" },
-    { value: `US$ ${fmt(usdTotal)}`, label: "Recaudado en USD (4 plataformas)" },
-    { value: `$ ${fmt(copTotal)}`, label: "Recaudado en COP (2 plataformas)" },
+    { value: `US$ ${fmt(usdTotal)}`, label: "Recaudado en USD (4 plataformas)", note: "Saldo actual donaciones recibidas" },
+    { value: `$ ${fmt(copTotal)}`, label: "Recaudado en COP (2 plataformas)", note: "Saldo actual donaciones recibidas" },
   ];
 
   document.getElementById("kpi-grid").innerHTML = kpis.map(k => `
     <div class="kpi">
       <div class="value">${k.value}</div>
       <div class="label">${k.label}</div>
+      ${k.note ? `<div class="kpi-note">${k.note}</div>` : ""}
     </div>
   `).join("");
 }

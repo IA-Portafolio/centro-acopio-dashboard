@@ -44,7 +44,7 @@ const DASHBOARD_DATA = {
   },
 
   donaciones: [
-    { plataforma: "PayPal", monto: 16345, moneda: "USD" },
+    { plataforma: "PayPal", monto: 16765, moneda: "USD" },
     { plataforma: "Zelle", monto: 2150, moneda: "USD" },
     { plataforma: "Binance", monto: 1100, moneda: "USD" },
     { plataforma: "Whydonate", monto: 935, moneda: "USD" },
@@ -80,7 +80,7 @@ const DASHBOARD_DATA = {
     },
     {
       departamento: "Chocó",
-      lugares: ["San José del Palmar", "Santa Cecilia", "Villa Claret", "Tadó"],
+      lugares: ["Quibdó", "San José del Palmar", "Santa Cecilia", "Villa Claret", "Tadó"],
     },
   ],
 
@@ -145,6 +145,7 @@ const DASHBOARD_DATA = {
     { departamento: "Valle del Cauca", lugar: "Versalles", lat: 4.5711, lon: -76.1936 },
     { departamento: "Valle del Cauca", lugar: "Zarzal", lat: 4.3958, lon: -76.0839 },
 
+    { departamento: "Chocó", lugar: "Quibdó", lat: 5.6923, lon: -76.6614 },
     { departamento: "Chocó", lugar: "San José del Palmar", lat: 4.9833, lon: -76.2333 },
     { departamento: "Chocó", lugar: "Santa Cecilia", lat: 5.2000, lon: -76.1000, approx: true },
     { departamento: "Chocó", lugar: "Villa Claret", lat: 5.0000, lon: -76.2800, approx: true },
