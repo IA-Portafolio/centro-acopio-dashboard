@@ -43,6 +43,26 @@ function renderFlota() {
   `</div>`;
 }
 
+const RECON_EMOJI = {
+  "Casas construidas": "🏠",
+  "Cocina comunitaria": "🍲",
+  "Aula educativa": "📚",
+  "Pisos": "🧱",
+  "Techos": "🏗️",
+};
+
+function renderReconstruccion() {
+  document.getElementById("reconstruccion-chart").innerHTML = `<div class="fleet-grid">` +
+    DASHBOARD_DATA.reconstruccion.map(r => `
+      <div class="fleet-card">
+        <div class="fleet-emoji">${RECON_EMOJI[r.tipo] || "🔨"}</div>
+        <div class="fleet-value">${r.cantidad}</div>
+        <div class="fleet-label">${r.tipo}</div>
+      </div>
+    `).join("") +
+  `</div>`;
+}
+
 function renderCobertura() {
   const max = Math.max(...DASHBOARD_DATA.cobertura.map(d => d.lugares.length));
   document.getElementById("cobertura-chart").innerHTML = DASHBOARD_DATA.cobertura
@@ -133,7 +153,6 @@ function renderComposicion() {
         <div class="comp-cat">${cat.categoria}</div>
         <div class="comp-pct">${cat.porcentaje}%<span class="comp-tons">${fmt(cat.toneladas)} t</span></div>
         <div class="bar-track"><div class="bar-fill alt" style="width:${cat.porcentaje / max * 100}%"></div></div>
-        ${cat.comentario ? `<div class="comp-comment">${cat.comentario}</div>` : ""}
       </div>
     `).join("") +
   `</div><p class="note">Total estimado: ${fmt(c.totalToneladas)} toneladas.</p>`;
@@ -191,6 +210,7 @@ function renderHeader() {
 renderHeader();
 renderKPIs();
 renderFlota();
+renderReconstruccion();
 renderLogros();
 renderComposicion();
 renderCobertura();

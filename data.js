@@ -8,10 +8,19 @@ const DASHBOARD_DATA = {
   },
 
   flota: [
-    { tipo: "Camiones", cantidad: 31 },
+    { tipo: "Camiones", cantidad: 37 },
     { tipo: "Tractomulas", cantidad: 9 },
-    { tipo: "Camionetas", cantidad: 37 },
+    { tipo: "Camionetas", cantidad: 42 },
     { tipo: "Avión", cantidad: 1 },
+  ],
+
+  // Avances de reconstrucción en terreno (actualización 2026-09-05).
+  reconstruccion: [
+    { tipo: "Casas construidas", cantidad: 8 },
+    { tipo: "Cocina comunitaria", cantidad: 1 },
+    { tipo: "Aula educativa", cantidad: 1 },
+    { tipo: "Pisos", cantidad: 2 },
+    { tipo: "Techos", cantidad: 2 },
   ],
 
   // Logro destacado del acopio: toneladas totales movilizadas por toda la flota.
@@ -44,7 +53,7 @@ const DASHBOARD_DATA = {
   },
 
   donaciones: [
-    { plataforma: "PayPal", monto: 16765, moneda: "USD" },
+    { plataforma: "PayPal", monto: 17411, moneda: "USD" },
     { plataforma: "Zelle", monto: 2150, moneda: "USD" },
     { plataforma: "Binance", monto: 1100, moneda: "USD" },
     { plataforma: "Whydonate", monto: 935, moneda: "USD" },
