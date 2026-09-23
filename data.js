@@ -10,17 +10,17 @@ const DASHBOARD_DATA = {
   flota: [
     { tipo: "Camiones", cantidad: 37 },
     { tipo: "Tractomulas", cantidad: 9 },
-    { tipo: "Camionetas", cantidad: 42 },
+    { tipo: "Camionetas", cantidad: 113 },
     { tipo: "Avión", cantidad: 1 },
   ],
 
   // Avances de reconstrucción en terreno (actualización 2026-09-05).
   reconstruccion: [
-    { tipo: "Casas construidas", cantidad: 8 },
+    { tipo: "Casas construidas", cantidad: 15 },
     { tipo: "Cocina comunitaria", cantidad: 1 },
     { tipo: "Aula educativa", cantidad: 1 },
     { tipo: "Pisos", cantidad: 2 },
-    { tipo: "Techos", cantidad: 2 },
+    { tipo: "Techos", cantidad: 8 },
   ],
 
   // Logro destacado del acopio: toneladas totales movilizadas por toda la flota.
@@ -28,7 +28,7 @@ const DASHBOARD_DATA = {
   logros: [
     {
       nombre: "Bajo Cuerda",
-      toneladasTotales: 500,
+      toneladasTotales: 900,
       porcentajeAlimentos: 56,
       etiquetaAlimentos: "alimentos y agua",
       nota: "56% = No perecederos (38%) + Agua (18%) del desglose real por categoría (ver sección 'Composición de la ayuda'). Estimado por el equipo del centro de acopio, no un peso medido con báscula.",
@@ -36,24 +36,25 @@ const DASHBOARD_DATA = {
   ],
 
   // Composición estimada de la ayuda recibida por categoría (fuente: table_v01.csv).
-  // Total 500 t — mismo total que el logro "Bajo Cuerda".
+  // Total 900 t — mismo total que el logro "Bajo Cuerda". Toneladas por
+  // categoría recalculadas manteniendo los mismos porcentajes del reporte original.
   composicionAyuda: {
-    totalToneladas: 500,
+    totalToneladas: 900,
     categorias: [
-      { categoria: "No perecederos", porcentaje: 38, toneladas: 190, comentario: "Sigue siendo el mayor volumen" },
-      { categoria: "Agua", porcentaje: 18, toneladas: 90, comentario: "Muy pesada; 20% original era alto" },
-      { categoria: "Mascotas", porcentaje: 15, toneladas: 75, comentario: "Alto, pero creíble por las rutas de refugios" },
-      { categoria: "Aseo", porcentaje: 9, toneladas: 45, comentario: "" },
-      { categoria: "Construcción", porcentaje: 7, toneladas: 35, comentario: "Herramientas pesan menos que bultos de comida" },
-      { categoria: "Acomodación", porcentaje: 5, toneladas: 25, comentario: "Carpas/cobijas ocupan volumen, menos peso" },
-      { categoria: "Bebés", porcentaje: 4, toneladas: 20, comentario: "" },
-      { categoria: "Seguridad", porcentaje: 2.5, toneladas: 12.5, comentario: "Cascos, guantes, linternas = liviano" },
-      { categoria: "Medicina", porcentaje: 1.5, toneladas: 7.5, comentario: "Muy liviana por peso" },
+      { categoria: "No perecederos", porcentaje: 38, toneladas: 342, comentario: "Sigue siendo el mayor volumen" },
+      { categoria: "Agua", porcentaje: 18, toneladas: 162, comentario: "Muy pesada; 20% original era alto" },
+      { categoria: "Mascotas", porcentaje: 15, toneladas: 135, comentario: "Alto, pero creíble por las rutas de refugios" },
+      { categoria: "Aseo", porcentaje: 9, toneladas: 81, comentario: "" },
+      { categoria: "Construcción", porcentaje: 7, toneladas: 63, comentario: "Herramientas pesan menos que bultos de comida" },
+      { categoria: "Acomodación", porcentaje: 5, toneladas: 45, comentario: "Carpas/cobijas ocupan volumen, menos peso" },
+      { categoria: "Bebés", porcentaje: 4, toneladas: 36, comentario: "" },
+      { categoria: "Seguridad", porcentaje: 2.5, toneladas: 22.5, comentario: "Cascos, guantes, linternas = liviano" },
+      { categoria: "Medicina", porcentaje: 1.5, toneladas: 13.5, comentario: "Muy liviana por peso" },
     ],
   },
 
   donaciones: [
-    { plataforma: "PayPal", monto: 17411, moneda: "USD" },
+    { plataforma: "PayPal", monto: 20356, moneda: "USD" },
     { plataforma: "Zelle", monto: 2150, moneda: "USD" },
     { plataforma: "Binance", monto: 1100, moneda: "USD" },
     { plataforma: "Whydonate", monto: 935, moneda: "USD" },
