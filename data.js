@@ -16,9 +16,10 @@ const DASHBOARD_DATA = {
 
   // Avances de reconstrucción en terreno (actualización 2026-09-05).
   reconstruccion: [
-    { tipo: "Casas construidas", cantidad: 15 },
-    { tipo: "Cocina comunitaria", cantidad: 1 },
-    { tipo: "Aula educativa", cantidad: 1 },
+    { tipo: "Casas construidas", cantidad: 23 },
+    { tipo: "Cocina comunitaria", cantidad: 2 },
+    { tipo: "Aula educativa", cantidad: 2 },
+    { tipo: "Batería de baños y duchas", cantidad: 1 },
     { tipo: "Pisos", cantidad: 2 },
     { tipo: "Techos", cantidad: 8 },
   ],

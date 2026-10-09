@@ -47,6 +47,7 @@ const RECON_EMOJI = {
   "Casas construidas": "🏠",
   "Cocina comunitaria": "🍲",
   "Aula educativa": "📚",
+  "Batería de baños y duchas": "🚿",
   "Pisos": "🧱",
   "Techos": "🏗️",
 };
